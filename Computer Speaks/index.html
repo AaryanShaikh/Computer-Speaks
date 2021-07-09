@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>I am this Computer</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+<div id="container">
+	<textarea id="text" placeholder="a"></textarea>
+</div>
+<label for="speed"></label>
+<input type="number" id="speed" name="speed" id="speed" min=".5" max="3" step=".5" value="1">
+<br><br>
+<div id="container2">
+	<button id="playbtn">Play</button>
+	<button id="pausebtn">Pause</button>
+	<button id="stopbtn">Stop</button>
+</div>
+<script src="typed.js"></script>
+<script type="text/javascript">
+	var typed4 = new Typed('#text', {
+    strings: ['Some strings without', 'Type Something here and I will Speak it for you', 'Use the Buttons below'],
+    typeSpeed: 50,
+    backSpeed: 50,
+    attr: 'placeholder',
+    bindInputFocusEvents: true,
+    loop: true
+  });
+</script>
+</body>
+</html>
